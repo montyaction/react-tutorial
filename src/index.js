@@ -4,20 +4,21 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className='App'>
-        <h1>Hello {name}!</h1>
-      </div>
-    );
-  }
-}
-const name = 'React';
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         <h1>Hello {name}!</h1>
+//       </div>
+//     );
+//   }
+// }
+// const name = 'React';
 // JSX
-const heading = <h1 className="site-heading">Hello, React!</h1>
+// const heading = <h1 className="site-heading">Hello, React!</h1>
 // No JSX
-const heading1 = React.createElement('h1', { className : 'site-heading'}, 'Hello, React!')
+// const heading1 = React.createElement('h1', { className : 'site-heading'}, 'Hello, React!')
+
 ReactDOM.render(<App />, document.getElementById('root'))
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
