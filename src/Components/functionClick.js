@@ -8,12 +8,12 @@ function functionClick() {
     }
 
   return (
-    <React.Fragment>
+    <>
       <a href="https://www.xtracover.com/" onClick={changeEvent}>
         Click Me
       </a>
-      <h1>Hello! Khushi</h1>
-    </React.Fragment>
+      <h1>Hello! Khushi Baby</h1>
+    </>
   );
 }
 
