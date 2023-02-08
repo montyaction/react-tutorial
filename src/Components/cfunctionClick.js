@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class cfunctionClick extends Component {
+class cfunctionClick extends Component {
 
     constructor(props) {
         super(props);

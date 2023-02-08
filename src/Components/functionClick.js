@@ -2,16 +2,14 @@ import React from 'react'
 
 function functionClick() {
 
-    function changeEvent(e) {
-        e.preventDefault();
-        console.log("Hello EVent handling...");
-    }
+  function changeEvent(e) {
+      e.preventDefault();
+      console.log("Hello EVent handling...");
+  }
 
   return (
     <>
-      <a href="https://www.xtracover.com/" onClick={changeEvent}>
-        Click Me
-      </a>
+      <a href="https://www.xtracover.com/" onClick={changeEvent}>Click Me</a>
       <h1>Hello! Khushi Baby</h1>
     </>
   );
