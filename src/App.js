@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Table from "./Table";
 import Form from "./Form";
 import Functional from "./Components/functional_component";
@@ -6,6 +7,7 @@ import ClassComponent from "./Components/class_component";
 import Channel from "./Components/channel";
 import FunctionClick from "./Components/functionClick";
 import CfunctionClick from "./Components/cfunctionClick";
+import List from "./Components/list";
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -62,6 +64,7 @@ class App extends Component {
         <Channel />
         <FunctionClick />
         <CfunctionClick roll="121" />
+        <List />
       </div>
     );
   }
