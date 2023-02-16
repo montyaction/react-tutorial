@@ -45,6 +45,9 @@ export default class FormOne extends Component {
           ></textarea>
         </div>
         <button>Submit</button>
+        <div>
+          <button onClick={this.handleClick}>Click Me!</button>
+        </div>
       </form>
     );
   }
