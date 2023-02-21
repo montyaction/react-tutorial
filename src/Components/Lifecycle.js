@@ -16,13 +16,19 @@ class Lifecycle extends React.Component {
         console.log("Lifecycle : componentDidUpdate");
     }
 
+    handleClick = () => {
+        this.setState({
+            count : this.state.count + 1
+        });
+    }
+
     render() {
 
         return (
             <div>
                 <h1>Component Lifecycle demo</h1>
-                <p>Count : {this.state.count}</p>
-                <button>Update Count</button>
+                <h2>Count : {this.state.count}</h2>
+                <button onClick={this.handleClick}>Update Count</button>
             </div>
         );
     }
