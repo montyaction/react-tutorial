@@ -9,7 +9,7 @@ class Lifecycle extends React.Component {
     }
 
     componentDidMount() {
-        console.log('Lifecycle : componetDidMount');
+        console.log('Lifecycle : componentDidMount');
     }
 
     componentDidUpdate() {

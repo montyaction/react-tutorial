@@ -8,9 +8,14 @@ import Channel from "./Components/channel";
 import FunctionClick from "./Components/functionClick";
 import CfunctionClick from "./Components/cfunctionClick";
 import List from "./Components/list";
-
-// import logo from './logo.svg';
-// import './App.css';
+import StatefulCom from "./Components/stateful_component";
+import Stylesheet from "./Components/Stylesheet";
+import FormOne from "./Components/FormOne";
+import Inline from "./Components/inline_style";
+import './Components/appStyle.css';
+import Style from "./Components/appStyle.module.css"
+import Routing from './Components/Routing1';
+import Lifecycle from "./Components/Lifecycle";
 
 class App extends Component {
   state = {
@@ -50,10 +55,11 @@ class App extends Component {
 
   render() {
     const { characters } = this.state
+    const numbers = [3, 4, 5, 6];
 
     return (
       <div className="container">
-        <Table
+        {/* <Table
           characterData={characters}
           removeCharacter={this.removeCharacter}
         />
@@ -64,7 +70,16 @@ class App extends Component {
         <Channel />
         <FunctionClick />
         <CfunctionClick roll="121" />
-        <List />
+        <List numbers={numbers} />
+        <StatefulCom />
+        <Stylesheet isvalue={false}></Stylesheet>
+        <Inline></Inline>
+        <h1>Hello Khushi Beta </h1>
+        <FormOne></FormOne>
+        <h1 className={Style.success}>Green</h1>
+        <h1 className="error">Error</h1> 
+        <Routing /> */}
+        <Lifecycle />
       </div>
     );
   }
