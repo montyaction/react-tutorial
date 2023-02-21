@@ -22,6 +22,7 @@ class Lifecycle extends React.Component {
             <div>
                 <h1>Component Lifecycle demo</h1>
                 <p>Count : {this.state.count}</p>
+                <button>Update Count</button>
             </div>
         );
     }
