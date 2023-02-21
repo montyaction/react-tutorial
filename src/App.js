@@ -16,6 +16,7 @@ import './Components/appStyle.css';
 import Style from "./Components/appStyle.module.css"
 import Routing from './Components/Routing1';
 import Lifecycle from "./Components/Lifecycle";
+import Clock from "./Components/Clock";
 
 class App extends Component {
   state = {
