@@ -27,12 +27,17 @@ export default class A extends Component {
         <h2> Component A</h2>
         <h5>{this.state.rollno}</h5>
         <button onClick={this.handleClick}>Change Roll No</button>
-        <myContext.Provider value={this.state}>
-            <B />
-            <C />
-        </myContext.Provider>
 
-        {/* <B name={this.state.name} /> */}
+        {/* <myContext.Provider value={this.state}> */}
+
+        <Provider value={contextValue}>
+          <B />
+          <C />
+        </Provider>
+
+        {/* </myContext.Provider> */}
+
+        <B name={this.state.name} />
       </div>
     );
   }
