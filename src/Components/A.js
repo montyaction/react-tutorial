@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import B from './B';
 import C from './C';
 
-export const myContext = React.createContext();
+// export const myContext = React.createContext();
 
 export default class A extends Component {
     constructor(props) {
@@ -16,7 +16,7 @@ export default class A extends Component {
 
     handleClick = ()=>{
       this.setState({
-        rollno : rollno + 1
+        rollno : this.state.rollno + 1
     })
   }
 
