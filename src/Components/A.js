@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import B from './B';
 import C from './C';
+import { Provider } from './Context';
 
 // export const myContext = React.createContext();
 
