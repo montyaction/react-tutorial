@@ -13,7 +13,7 @@ class Form extends Component {
     const { name, value } = event.target;
 
     this.setState({
-      [name]: value,
+      [name] : value,
     });
   };
 

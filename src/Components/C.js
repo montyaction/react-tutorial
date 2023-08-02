@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-// import { myContext } from "./A";
-import { Consumer } from "./Context";
+import { myContext } from "./A";
+// import { Consumer } from "./Context";
 
 export default class C extends Component {
 
@@ -9,13 +9,13 @@ export default class C extends Component {
       <div>
         <h2> Component C</h2>
 
-        {/* <myContext.Consumer> */}
-        <Consumer>
+        <myContext.Consumer>
+        {/* <Consumer> */}
             {data=><h3>{data.rollno}</h3>}
-        </Consumer>
+        {/* </Consumer> */}
 
-        {/* </myContext.Consumer> */}
-        {/* <h3>{this.props.name}</h3> */}
+        </myContext.Consumer>
+        <h3>{this.props.name}</h3>
       </div>
     );
   }

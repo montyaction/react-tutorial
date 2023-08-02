@@ -4,7 +4,7 @@ export default class FormOne extends Component {
   constructor() {
     super();
     this.state = {
-      username: 'UserName',
+      username: '',
       address: ''
     }
   }
@@ -27,27 +27,25 @@ export default class FormOne extends Component {
   }
 
   render() {
+    const { username, address } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
           <label>UserName</label>
           <input
             type="text"
-            value={this.state.username}
+            value={username}
             onChange={this.handleUsername}
           ></input>
         </div>
         <div>
           <label>Address</label>
           <textarea
-            value={this.state.address}
+            value={address}
             onChange={this.handleAddress}
           ></textarea>
         </div>
         <button>Submit</button>
-        <div>
-          <button onClick={this.handleClick}>Click Me!</button>
-        </div>
       </form>
     );
   }
